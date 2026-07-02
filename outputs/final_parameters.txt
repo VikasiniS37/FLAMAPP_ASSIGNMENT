@@ -1,0 +1,5 @@
+Theta (degrees): 29.999565
+Theta (radians): 0.523591
+M: 0.030001
+X: 54.998962
+L1 Error: 0.01336226

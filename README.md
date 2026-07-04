@@ -42,10 +42,7 @@ The objective is to estimate θ, M and X such that the generated curve closely m
 ---
 
 # Repository Structure
-
 ```
-FLAMAPP_ASSIGNMENT/
-
 │
 ├── data/
 │   └── dataset.csv
@@ -53,23 +50,17 @@ FLAMAPP_ASSIGNMENT/
 ├── outputs/
 │   ├── input_curve.png
 │   ├── final_curve_fit.png
-│   ├── theta_sensitivity.png
-│   ├── m_sensitivity.png
-│   ├── x_sensitivity.png
-│   ├── residual_distribution.png
-│   ├── residual_heatmap.png
-│   ├── optimization_convergence.png
-│   ├── optimization_convergence_zoomed.png
+│   ├── output.jpeg
 │   ├── final_parameters.txt
 │   └── final_summary.csv
 │
 ├── src/
 │   └── main.ipynb
 │
+├── .gitignore
 ├── README.md
 └── requirements.txt
 ```
-
 ---
 
 # Solution Workflow

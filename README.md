@@ -319,7 +319,7 @@ $$
 
 ## Optimization Convergence (Zoomed)
 
-![Optimization Convergence Zoomed](outputs\output.jpeg)
+![Optimization Convergence Zoomed](outputs/output.jpeg)
 
 # Technologies Used
 

@@ -331,7 +331,11 @@ $$
 
 ### Assignment
 
-FlamApp AI. *Research & Development Assignment*. Problem statement and dataset provided by the company.
+FlamApp AI. (2026).
+
+*Research & Development Assignment – Parametric Curve Parameter Estimation.*
+
+Internal assignment document and dataset provided by FlamApp AI.
 
 ---
 
@@ -341,7 +345,7 @@ Storn, R., & Price, K. (1997).
 
 *Differential Evolution – A Simple and Efficient Heuristic for Global Optimization over Continuous Spaces.*
 
-Journal of Global Optimization, 11(4), 341–359.
+Journal of Global Optimization, **11**(4), 341–359.
 
 https://doi.org/10.1023/A:1008202821328
 
@@ -349,21 +353,48 @@ https://doi.org/10.1023/A:1008202821328
 
 ### Differential Evolution Documentation
 
+SciPy Community. (2025).
+
+*scipy.optimize.differential_evolution.*
+
+SciPy Documentation.
+
 https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.differential_evolution.html
 
 ---
 
 ### KDTree Documentation
 
+SciPy Community. (2025).
+
+*scipy.spatial.cKDTree.*
+
+SciPy Documentation.
+
 https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.cKDTree.html
+
+---
+### Distance Metric
+
+Deza, M. M., & Deza, E. (2009).
+
+*Encyclopedia of Distances.*
+
+Springer.
+
+https://doi.org/10.1007/978-3-642-00234-2
 
 ---
 
 ### Desmos Equation Formatting
 
+Desmos Studio PBC. (n.d.).
+
+*Desmos Graphing Calculator.*
+
 https://www.desmos.com/calculator/rfj91yrxob
 
-----
+---
 
 # Conclusion
 

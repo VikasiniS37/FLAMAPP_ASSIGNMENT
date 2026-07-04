@@ -168,17 +168,15 @@ Because of this, directly comparing point *i* of the generated curve with point 
 
 ---
 
-## Step 5 – Nearest-Neighbour Matching
+## Step 5 – Curve Matching and Error Computation
 
-To correctly compare unordered point sets, a nearest-neighbour search strategy was adopted.
+Since the observed points are not ordered according to the parameter **t**, direct point-to-point comparison would produce incorrect error values.
 
-A KDTree was constructed from the generated curve.
+To compare the generated curve with the observed dataset, a nearest-neighbour search using **SciPy KDTree** was performed. Each observed point was matched with its closest generated point.
 
-Each observed point was matched with its nearest predicted point.
+The optimization objective was defined as the mean **L1 (Manhattan) distance** between all matched point pairs.
 
-The optimization objective was defined as the mean L1 (Manhattan) distance between these matched pairs.
-
----
+----
 
 ## Step 6 – Parameter Optimization
 
@@ -300,29 +298,24 @@ The convergence plots show a rapid reduction in the objective value during the i
 
 # Final Parametric Equation
 
-```
-(
-t*cos(0.523591)
+$$
+\left(
+t\cos(0.523591)
 -
-e^(0.030001*abs(t))*sin(0.3*t)*sin(0.523591)
+e^{0.030001|t|}
+\sin(0.3t)\sin(0.523591)
 +
-54.998962,
-
-42
+54.998962,\;
+42+t\sin(0.523591)
 +
-t*sin(0.523591)
-+
-e^(0.030001*abs(t))*sin(0.3*t)*cos(0.523591)
-)
-```
+e^{0.030001|t|}
+\sin(0.3t)\cos(0.523591)
+\right)
+$$
 
-Domain:
-
-```
-6 ≤ t ≤ 60
-```
-
----
+$$
+6 \le t \le 60
+$$
 
 # Technologies Used
 
@@ -336,27 +329,41 @@ Domain:
 
 # References
 
-Only official documentation was referenced during implementation.
+### Assignment
 
-1. NumPy Documentation  
-   https://numpy.org/doc/
-
-2. Pandas Documentation  
-   https://pandas.pydata.org/docs/
-
-3. Matplotlib Documentation  
-   https://matplotlib.org/stable/
-
-4. SciPy Documentation  
-   https://docs.scipy.org/doc/scipy/
-
-5. SciPy KDTree Documentation  
-   https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.cKDTree.html
-
-6. Differential Evolution Documentation  
-   https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.differential_evolution.html
+FlamApp AI. *Research & Development Assignment*. Problem statement and dataset provided by the company.
 
 ---
+
+### Optimization Algorithm
+
+Storn, R., & Price, K. (1997).
+
+*Differential Evolution – A Simple and Efficient Heuristic for Global Optimization over Continuous Spaces.*
+
+Journal of Global Optimization, 11(4), 341–359.
+
+https://doi.org/10.1023/A:1008202821328
+
+---
+
+### Differential Evolution Documentation
+
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.differential_evolution.html
+
+---
+
+### KDTree Documentation
+
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.cKDTree.html
+
+---
+
+### Desmos Equation Formatting
+
+https://www.desmos.com/calculator/rfj91yrxob
+
+----
 
 # Conclusion
 
@@ -370,3 +377,7 @@ The final solution achieved:
 - Accurate reconstruction of the original curve
 
 The validation experiments demonstrate that the estimated parameters reliably reproduce the provided dataset while satisfying the assignment constraints.
+
+# Academic Integrity
+
+Working on this assignment was completed independently and good experience. All the rules mentioned was followed up sincerely.

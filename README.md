@@ -317,6 +317,10 @@ $$
 6 \le t \le 60
 $$
 
+## Optimization Convergence (Zoomed)
+
+![Optimization Convergence Zoomed](outputs\output.jpeg)
+
 # Technologies Used
 
 - Python
